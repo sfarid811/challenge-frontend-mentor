@@ -5,8 +5,7 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 100%);
-    
+    background-color: hsl(210, 46%, 95%);
 }
 
 section {
@@ -17,6 +16,7 @@ section {
 section .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
     column-gap: 2rem;
     row-gap: 1.2rem;
 }
@@ -24,15 +24,19 @@ section .container {
 section .testimonial {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: .5rem 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
   
 }
 
+/* .justify-text {
+    text-align: justify;
+} */
 
 .title {
     font-weight: 900;
     font-size: 24px;
     padding-bottom: 15px;
+    word-break: break-all
 }
 .name {
     font-weight: 900;
