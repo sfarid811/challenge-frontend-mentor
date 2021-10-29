@@ -1,0 +1,131 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+section {
+    max-width: 1440px;
+    margin:  2rem auto;
+}
+
+section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 2rem;
+    row-gap: 1.2rem;
+}
+
+section .testimonial {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+  
+}
+
+
+.title {
+    font-weight: 900;
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.name {
+    font-weight: 900;
+    font-size: 18px;
+    
+}
+section .testimonial:nth-child(1) {
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+}
+section .testimonial:nth-child(2) {
+    background-color:  hsl(217, 19%, 35%);
+    color: #fff;
+}
+
+section .testimonial:nth-child(3), .testimonial:nth-child(4) {
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+   
+}
+section .testimonial:nth-child(5) {
+    background-color: hsl(219, 29%, 14%);
+    color: #fff;
+}
+
+section .content-testimonial {
+
+    padding-top: 20px;
+    line-height: 25px;
+     
+   }
+
+section .header-testimonial {
+  
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    line-height: 1.7rem;
+
+}
+
+section img {
+    border-radius: 50%;
+    /* margin-left: 20px; */
+
+}
+
+section .testimonial .content-testimonial {
+    margin-bottom: 50px;
+}
+
+section .testimonial:nth-child(1) {
+  
+  grid-column: 1/3;
+}
+
+section .testimonial:nth-child(3) {
+  
+    grid-row: span 2;
+  }
+
+  section .testimonial:nth-child(5) {
+
+    grid-column: span 2;
+  }
+
+
+
+section .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+@media (max-width: 725px) {
+    section .container {
+        display: grid;
+        grid-template-columns: 100px;
+        margin: 0 20px;
+    }
+
+    section .testimonial {
+
+        grid-column: span 2;
+
+      }
+      section .content-testimonial {
+
+       padding-top: 20px;
+       line-height: 25px;
+        
+      }
+    
+
+}
+
